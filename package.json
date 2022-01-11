@@ -1,0 +1,35 @@
+{
+	"name": "@xutl/ansi",
+	"version": "1.0.0",
+	"description": "ANSI Colorizer",
+	"main": "dist/index.js",
+	"scripts": {
+		"build": "tsc",
+		"test": "xutltest dist/*.t.js"
+	},
+	"files": [
+		"dist/index.js",
+		"dist/index.d.ts",
+		"dist/ansi.js",
+		"dist/ansi.d.ts",
+		"dist/wrap.js",
+		"dist/wrap.d.ts",
+		"dist/stream.js",
+		"dist/stream.d.ts"
+	],
+	"keywords": [
+		"ANSI",
+		"Colors"
+	],
+	"author": "Philipp Dunkel <pip@pipobscure.com>",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/node": "^17.0.8",
+		"@xutl/test": "^1.0.2",
+		"typescript": "^4.5.4"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/xutl-es/ansi.git"
+	}
+}
