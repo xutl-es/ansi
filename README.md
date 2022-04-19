@@ -1,11 +1,26 @@
 # @xutl/ansi
 
-One [eXtremely Useful Tool Library](https://xutl.es) to facilitate writing CLI programs that need argument parsing.
+One [eXtremely Useful Tool Library](https://xutl.es) to facilitate writing CLI programs that need colored output and moving the text-cursor.
 
 ## Install
 
 ```sh
 npm install --save @xutl/ansi
+```
+
+## Usage
+
+```javascript
+import ANSI from '@xutl/ansi';
+
+process.stdout.write(ANSI.red(`my ${ANSI.bold('bold text')} in red`));
+
+import { Stream } from '@xutl/ansi';
+
+const s = new Stream(process.stdout);
+
+s.foreground('red').write('my ').bold().write('bold text').reset().foreground('red').write(' in red');
+
 ```
 
 ## License
